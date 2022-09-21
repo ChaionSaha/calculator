@@ -1,3 +1,20 @@
+@keyframes circle-1 {
+  20% {
+    left: 50%;
+    top: 20%;
+  }
+  40% {
+    top: 70%;
+    left: 20%;
+  }
+  60% {
+    top: 50%;
+    left: 50%;
+  }
+  80% {
+    top: 10%;
+  }
+}
 *,
 *::before,
 *::after {
@@ -11,4 +28,72 @@ body {
   background: #a0d7ff;
   height: 100vh;
   width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.background-design {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.background-design .big-circle {
+  height: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-10%, -50%);
+}
+.background-design .number-6, .background-design .number-9 {
+  position: absolute;
+  height: 10%;
+}
+.background-design .number-6 {
+  top: 70%;
+  left: 10%;
+}
+.background-design .number-9 {
+  left: 30%;
+  top: 10%;
+}
+.background-design .small-circle {
+  height: 2%;
+  position: absolute;
+}
+.background-design .circle-1 {
+  top: 40%;
+  left: 95%;
+  animation: circle-1 40s linear;
+  animation-iteration-count: infinite;
+}
+.background-design .circle-2 {
+  top: 90%;
+  left: 10%;
+  animation: circle-2 50s linear;
+  animation-iteration-count: infinite;
+}
+.background-design .circle-3 {
+  top: 5%;
+  left: 5%;
+  animation: circle-3 60s linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes circle-2 {
+  20% {
+    left: 50%;
+    top: 10%;
+  }
+  40% {
+    top: 105%;
+    left: 90%;
+  }
+  60% {
+    top: 50%;
+    left: 50%;
+  }
+  80% {
+    top: 10%;
+    left: 5%;
+  }
 }
