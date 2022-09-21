@@ -15,6 +15,42 @@
     top: 10%;
   }
 }
+@keyframes circle-2 {
+  20% {
+    left: 50%;
+    top: 10%;
+  }
+  40% {
+    top: 105%;
+    left: 90%;
+  }
+  60% {
+    top: 50%;
+    left: 50%;
+  }
+  80% {
+    top: 10%;
+    left: 5%;
+  }
+}
+@keyframes circle-3 {
+  20% {
+    left: 10%;
+    top: 90%;
+  }
+  40% {
+    top: 95%;
+    left: 90%;
+  }
+  60% {
+    top: 0%;
+    left: 50%;
+  }
+  80% {
+    top: 60%;
+    left: 5%;
+  }
+}
 *,
 *::before,
 *::after {
@@ -79,21 +115,21 @@ body {
   animation-iteration-count: infinite;
 }
 
-@keyframes circle-2 {
+@keyframes circle-3 {
   20% {
-    left: 50%;
-    top: 10%;
+    left: 10%;
+    top: 90%;
   }
   40% {
-    top: 105%;
+    top: 95%;
     left: 90%;
   }
   60% {
-    top: 50%;
+    top: 0%;
     left: 50%;
   }
   80% {
-    top: 10%;
+    top: 60%;
     left: 5%;
   }
 }
