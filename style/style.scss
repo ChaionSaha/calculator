@@ -38,11 +38,15 @@ body {
 	& .number-6 {
 		top: 70%;
 		left: 10%;
+
+		animation-iteration-count: infinite;
 	}
 
 	& .number-9 {
 		left: 30%;
 		top: 10%;
+
+		animation-iteration-count: infinite;
 	}
 
 	& .small-circle {
@@ -69,27 +73,5 @@ body {
 		left: 5%;
 		animation: circle-3 60s linear;
 		animation-iteration-count: infinite;
-	}
-}
-
-@keyframes circle-3 {
-	20% {
-		left: 10%;
-		top: 90%;
-	}
-
-	40% {
-		top: 95%;
-		left: 90%;
-	}
-
-	60% {
-		top: 00%;
-		left: 50%;
-	}
-
-	80% {
-		top: 60%;
-		left: 5%;
 	}
 }
